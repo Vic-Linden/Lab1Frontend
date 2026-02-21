@@ -19,7 +19,7 @@ header {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
-.nav { 
+nav { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,5 +66,20 @@ header {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.user {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #1a2639;
 }
 
