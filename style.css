@@ -83,3 +83,66 @@ nav {
     border: 2px solid #1a2639;
 }
 
+/* HERO SECTION  */
+.hero {
+    padding: 5rem 5% 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    color: #1a2639;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: "Georgia", "serif";
+}
+
+.hero-text p {
+    color: #2a2438;
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+.hero-container {
+    position: relative;
+    padding: 2rem;
+}
+
+.logo-slider {
+    display: flex; 
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease;
+}
+
+.logo-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 50%;
+    min-width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 4px rgba(0,0,0,0.95);
+    transition: transform 0.5s ease;
+}
+
+.logo-card:hover {
+    transform: translateY(-10px)
+}
+
+.logo-card img {
+    width: 130px;
+    height: 180px;
+    object-fit: cover; /*MY SAVIOR! */
+    border-radius: 10px;
+}
+
