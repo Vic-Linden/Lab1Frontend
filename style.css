@@ -156,18 +156,17 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2.5rem;
-    flex-direction: row;
     max-width: 100%; 
     margin: 0 auto;
     align-items: flex-start;
-    justify-content: center;
 }
 
-.learning-card {
+.learning-card, .school-text {
     background: #dbd8e3;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 15px 4px rgba(0,0,0,0.2);
+    line-height: 1.6;
 }
 
 .learning-card h2 {
@@ -188,7 +187,6 @@ nav {
     font-weight: bold;
     opacity: 0.6;
     margin-bottom: 15px;
-    color: 
 }
 
 .learning-list {
@@ -226,7 +224,7 @@ nav {
     border-radius: 12px;
     box-shadow: 0 15px 4px rgba(0,0,0,0.2);
     line-height: 1.6;
-}
+} 
 
 .school-text h2 {
     margin-bottom: 5px;
