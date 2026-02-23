@@ -124,14 +124,14 @@ nav {
 
 .logo-card {
     background: white;
-    padding: 3rem 2rem;
+    padding: 10px;
     border-radius: 50%;
-    min-width: 220px;
+    width: 220px;
     height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 15px 4px rgba(0,0,0,0.95);
+    box-shadow: 0 15px 4px rgba(0,0,0,0.2);
     transition: transform 0.5s ease;
 }
 
@@ -140,9 +140,8 @@ nav {
 }
 
 .logo-card img {
-    width: 130px;
-    height: 180px;
-    object-fit: cover; /*MY SAVIOR! */
-    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    object-fit: contain; 
 }
 
