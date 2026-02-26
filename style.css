@@ -370,3 +370,22 @@ nav {
         gap: 1rem;
     }
 }
+
+
+/* --------PROJECTS----- HACKATHON-------- */
+.project-container {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-size: 1.2rem;
+    color: #1a2639;
+    font-weight: 400;
+    font-family: "Georgia", serif;
+    margin-bottom: 1rem;
+}
+
+
+
