@@ -384,8 +384,30 @@ nav {
     color: #1a2639;
     font-weight: 400;
     font-family: "Georgia", serif;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
+.hack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
 
+.hack-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.50);
+    transition: all 0.3s ease;
+}
+
+.hack-item:hover {
+    transform: translateY(-10px);
+}
+
+.hack-item img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+}
 
