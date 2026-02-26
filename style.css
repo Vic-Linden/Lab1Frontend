@@ -394,6 +394,9 @@ nav {
 }
 
 .hack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: white;
     padding: 1rem;
     border-radius: 12px;
@@ -411,3 +414,30 @@ nav {
     margin-bottom: 1.2rem;
 }
 
+.hack-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #1a2639;
+    font-weight: 700;
+}
+
+.tech {
+    color: #a855f7;
+    margin: 0.2rem;
+}
+
+.hack-item a {
+    text-decoration: none;
+   background: whitesmoke;
+   border: 2px solid #7b7194;
+   color: #1a2639;
+   padding: 0.07rem 1.5rem;
+   border-radius: 4px;
+   font-weight: 500;
+   transition: all 0.3s ease;
+}
+
+.hack-item a:hover {
+    background: #a855f7;
+    color: white;
+}
