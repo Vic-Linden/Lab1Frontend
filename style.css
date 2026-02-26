@@ -412,6 +412,7 @@ nav {
     width: 100%;
     object-fit: cover;
     margin-bottom: 1.2rem;
+    border-radius: 8px;
 }
 
 .hack-item h3 {
