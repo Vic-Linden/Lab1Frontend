@@ -381,10 +381,10 @@ nav {
 
 .section-header {
     font-size: 1.2rem;
-    color: #1a2639;
+    color: #fff;
     font-weight: 400;
     font-family: "Georgia", serif;
-    margin-bottom: 1.5rem;
+    margin: 1rem 0;
 }
 
 .hack-grid,
@@ -429,7 +429,7 @@ nav {
 
 .tech {
     color: #a855f7;
-    margin: 0.2rem;
+    margin-top: 0.5rem;
 }
 
 .hack-item a,
@@ -439,6 +439,7 @@ nav {
    border: 2px solid #7b7194;
    color: #1a2639;
    padding: 0.07rem 1.5rem;
+   margin-top: 0.5rem;
    border-radius: 4px;
    font-weight: 500;
    transition: all 0.3s ease;
