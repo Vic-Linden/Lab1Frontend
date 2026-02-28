@@ -370,3 +370,83 @@ nav {
         gap: 1rem;
     }
 }
+
+
+/* --------PROJECTS----- HACKATHON-------- */
+.project-container {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Georgia", serif;
+    margin: 1rem 0;
+}
+
+.hack-grid,
+.school-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.hack-item,
+.school-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.hack-item:hover,
+.school-item:hover {
+    transform: translateY(-10px);
+}
+
+.hack-item img,
+.school-item img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+}
+
+.hack-item h3,
+.school-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #1a2639;
+    font-weight: 700;
+}
+
+.tech {
+    color: #a855f7;
+    margin-top: 0.5rem;
+}
+
+.hack-item a,
+.school-item a {
+    text-decoration: none;
+   background: whitesmoke;
+   border: 2px solid #7b7194;
+   color: #1a2639;
+   padding: 0.5rem 1.5rem;
+   margin-top: 0.5rem;
+   border-radius: 4px;
+   font-weight: 500;
+   transition: all 0.3s ease;
+}
+
+.hack-item a:hover,
+.school-item a:hover {
+    background: #a855f7;
+    color: white;
+}
