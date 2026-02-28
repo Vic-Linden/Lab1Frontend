@@ -387,13 +387,15 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-.hack-grid {
+.hack-grid,
+.school-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
 }
 
-.hack-item {
+.hack-item,
+.school-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,18 +406,21 @@ nav {
     transition: all 0.3s ease;
 }
 
-.hack-item:hover {
+.hack-item:hover,
+.school-item:hover {
     transform: translateY(-10px);
 }
 
-.hack-item img {
+.hack-item img,
+.school-item img {
     width: 100%;
     object-fit: cover;
     margin-bottom: 1.2rem;
     border-radius: 8px;
 }
 
-.hack-item h3 {
+.hack-item h3,
+.school-item h3 {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
     color: #1a2639;
@@ -427,7 +432,8 @@ nav {
     margin: 0.2rem;
 }
 
-.hack-item a {
+.hack-item a,
+.school-item a {
     text-decoration: none;
    background: whitesmoke;
    border: 2px solid #7b7194;
@@ -438,7 +444,8 @@ nav {
    transition: all 0.3s ease;
 }
 
-.hack-item a:hover {
+.hack-item a:hover,
+.school-item a:hover {
     background: #a855f7;
     color: white;
 }
