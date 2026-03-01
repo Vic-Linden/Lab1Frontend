@@ -783,3 +783,11 @@ nav {
         padding: 1.5rem;
     }
 }
+
+/* ---- EASTER EGG ----- */
+/* animation for the confetti falling down the screen */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
