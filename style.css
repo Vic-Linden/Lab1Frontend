@@ -582,3 +582,74 @@ nav {
         font-size: 1.8rem;
     }
 }
+
+
+/* ------------- RESUME PAGE ------------ */
+.resume-section {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.resume-header h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Georgia", serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resume-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    max-width: 100%; 
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.resume-photo img {
+    width: 100%;
+    border-radius: 20px;
+    border: 10px solid white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.resume-experience {
+    background: rgba(51, 51, 51, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #f4f4f4;
+}
+
+.resume-experience h3 {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-bottom: 0.3rem;
+}
+
+.resume-experience p {
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.roles {
+    list-style: none;
+    padding: 0;
+}
+
+.roles li {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid #ffd700;
+    position: relative;
+}
+
+.roles li strong {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    letter-spacing: 1px;
+}
+
