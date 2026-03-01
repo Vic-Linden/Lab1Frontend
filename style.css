@@ -582,3 +582,150 @@ nav {
         font-size: 1.8rem;
     }
 }
+
+
+/* ------------- RESUME PAGE ------------ */
+.resume-section {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.resume-header h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Georgia", serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resume-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    max-width: 100%; 
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.resume-photo img {
+    width: 100%;
+    border-radius: 20px;
+    border: 10px solid white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.resume-experience {
+    background: rgba(51, 51, 51, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #f4f4f4;
+}
+
+.resume-experience h3 {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-bottom: 0.3rem;
+}
+
+.resume-experience p {
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.roles {
+    list-style: none;
+    padding: 0;
+}
+
+.roles li {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid #ffd700;
+    position: relative;
+}
+
+.roles li strong {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    letter-spacing: 1px;
+}
+
+/* ------- EDUCATION SECTION -------- */
+.education-section {
+    padding: 2rem 5% 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.resume-education {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.education-card {
+    background: rgba(51, 51, 51, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #f4f4f4;
+    border-left: 4px solid #ffd700;
+}
+
+.resume-education h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: "Georgia", serif;
+    margin-bottom: 2rem;
+}
+
+.education-card h3 {
+    font-size: 1.2rem;
+    font-family: "Georgia", serif;
+    color: #ffd700;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.09rem;
+}
+
+.education-card h4 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.status {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.education-card p {
+    line-height: 1.7;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+/* -------- RESPONSIVE DESIGN ------------ */
+@media (max-width: 1024px) {
+    .resume-header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .resume-photo {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-header h2, .resume-education h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .resume-experience, .education-card {
+        padding: 1.5rem;
+    }
+}
