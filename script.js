@@ -1,3 +1,4 @@
+//pressing the spacebar triggers falling confetti across the screen.
 document.addEventListener("DOMContentLoaded", function (){
 
    
@@ -25,3 +26,19 @@ document.addEventListener("DOMContentLoaded", function (){
         }
     });
 });
+
+
+//temporarily changes all h2  when clicked.
+document.querySelectorAll("h2").forEach(function (title){
+    title.addEventListener("click", function(){
+
+
+        const orginalText = title.textContent;
+        title.textContent = "hihihihi";
+
+
+        setTimeout(function (){
+            title.textContent = orginalText;
+        }, 1000);
+    })
+})

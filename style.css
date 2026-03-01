@@ -785,6 +785,7 @@ nav {
 }
 
 /* ---- EASTER EGG ----- */
+/* animation for the confetti falling down the screen */
 @keyframes fall {
     to {
         transform: translateY(100vh);
