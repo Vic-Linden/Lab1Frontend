@@ -5,12 +5,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, #5b5270 50%, #5c5470 100%); 
+    background: #8C8C8C;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 header {
-    background: #dbd8e3;
+    background: #F2F2F2;
     padding: 1.2rem 5%;
     position: sticky; 
     top: 0;
@@ -50,7 +50,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #7b7194;
+    color: #ffd700;
 }
 
 .nav-links a::after { 
@@ -60,7 +60,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: #7b7194;
+    background: #ffd700;
     transition: width 0.3s ease;
 }
 
@@ -96,7 +96,7 @@ nav {
 
 .hero-text h1 {
     font-size: 4rem;
-    color: #1a2639;
+    color: #ffd700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
     font-weight: 400;
@@ -161,29 +161,35 @@ nav {
     align-items: flex-start;
 }
 
-.learning-card, .school-text {
-    background: #dbd8e3;
+.learning-card, 
+.school-text {
+    background: #595959;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 15px 4px rgba(0,0,0,0.2);
     line-height: 1.6;
 }
 
-.learning-card h2 {
+.learning-card h2,
+.school-text h2 {
     font-size: 2.2rem;
-    color: #1a2639;
+    color: #ffd700;
     font-weight: 400;
     font-family: "Georgia", serif;
     margin-bottom: 5px;
 }
 
-.learning-card p {
-    font-size: 1rem;
+.learning-card p,
+.school-text p {
+    color: #f4f4f4;
+    font-size: 1.1rem;
     opacity: 0.8;
     margin-bottom: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .learning-card p.years {
+    color: #f4f4f4;
     font-weight: bold;
     opacity: 0.6;
     margin-bottom: 15px;
@@ -219,28 +225,16 @@ nav {
 }
 
 .school-text {
-    background: #dbd8e3;
+    background: #595959;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 15px 4px rgba(0,0,0,0.2);
     line-height: 1.6;
 } 
 
-.school-text h2 {
-    margin-bottom: 5px;
-    color: #1a2639;
-    font-family: "Georgia", serif;
-}
-
-.school-text p {
-    font-size: 1rem;
-    opacity: 0.8;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 /* FOOTER SECTION  */
 .main-footer {
-    background-color: #1a2639;
+    background-color: #262626;
     color: #dbd8e3;
     padding: 1rem 0;
     font-family: sans-serif;
@@ -285,7 +279,7 @@ nav {
 }
 
 .footer-section a:hover {
-    color: #a855f7;
+    color: #ffd700;
 }
 
 .footer-bottom {
@@ -428,7 +422,7 @@ nav {
 }
 
 .tech {
-    color: #a855f7;
+    color: #ffd700;
     margin-top: 0.5rem;
 }
 
@@ -447,8 +441,8 @@ nav {
 
 .hack-item a:hover,
 .school-item a:hover {
-    background: #a855f7;
-    color: white;
+    background: #ffd700;
+    color: black;
 }
 
 .info-btn {
@@ -462,11 +456,6 @@ nav {
     font-weight: 500;
     transition: all 0.3s ease;
     display: inline-block;
-}
-
-.info-btn:hover {
-    background: #a855f7;
-    color: white;
 }
 
 /*----- MODAL ----*/
@@ -512,7 +501,7 @@ nav {
 }
 
 .modal-close:hover {
-    color: #a855f7;
+    color: #ffd700;
 }
 
 
