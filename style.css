@@ -244,7 +244,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
     flex-wrap: wrap;
@@ -315,7 +315,8 @@ nav {
     }
 
     .nav-links {
-        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero {
@@ -344,9 +345,8 @@ nav {
     }
 
     .school-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
-        gap: 1.5rem;
     }
 
     .social-links {
@@ -384,7 +384,7 @@ nav {
 .hack-grid,
 .school-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -502,6 +502,19 @@ nav {
 
 .modal-close:hover {
     color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .hack-grid,
+    .school-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px){
+  .modal-content{
+    margin: 3rem auto;
+  }
 }
 
 
