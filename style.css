@@ -706,3 +706,26 @@ nav {
     opacity: 0.9;
     font-size: 1rem;
 }
+
+/* -------- RESPONSIVE DESIGN ------------ */
+@media (max-width: 1024px) {
+    .resume-header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .resume-photo {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-header h2, .resume-education h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .resume-experience, .education-card {
+        padding: 1.5rem;
+    }
+}
