@@ -145,7 +145,7 @@ nav {
     object-fit: contain; 
 }
 
-/* SCHOOL SECTION  */
+/*---------- SCHOOL SECTION ---------- */
 .school-section {
     padding: 4rem 5%;
     max-width: 1400px;
@@ -232,7 +232,7 @@ nav {
     line-height: 1.6;
 } 
 
-/* FOOTER SECTION  */
+/*-------------- FOOTER SECTION ------------ */
 .main-footer {
     background-color: #262626;
     color: #dbd8e3;
@@ -244,7 +244,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
     flex-wrap: wrap;
@@ -291,81 +291,6 @@ nav {
     opacity: 0.6;
 }
 
-/* RESPONSIVE DESIGN  */
-@media (max-width: 1024px){
-    .hero-text h1 {
-        font-size: 3rem;
-    }
-
-    .logo-card {
-        width: 180px;
-        height: 180px;
-    }
-
-    .logo-card img {
-        width: 130px;
-        height: 130px;
-    }
-}
-
-@media (max-width: 768px){
-    nav {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav-links {
-        gap: 1.5rem;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: 2rem;
-    }
-
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .logo-card {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto;
-    }
-
-    .logo-card img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .logo-slider {
-        flex-wrap: wrap;
-    }
-
-    .school-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px){
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .nav-links {
-        font-size: 0.9rem;
-        gap: 1rem;
-    }
-}
-
-
 /* --------PROJECTS----- HACKATHON-------- */
 .project-container {
     padding: 2rem;
@@ -375,7 +300,7 @@ nav {
 
 .section-header {
     font-size: 1.2rem;
-    color: #fff;
+    color: #f4f4f4;
     font-weight: 400;
     font-family: "Georgia", serif;
     margin: 1rem 0;
@@ -384,7 +309,7 @@ nav {
 .hack-grid,
 .school-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -470,14 +395,12 @@ nav {
     display: block;
 }
 
-
 .modal-overlay {
     position: absolute;
     inset: 0;
     background: rgba(26, 38, 57, 0.65);
     display: block; 
 }
-
 
 .modal-content {
     position: relative;
@@ -503,7 +426,6 @@ nav {
 .modal-close:hover {
     color: #ffd700;
 }
-
 
 /* ----------------- ABOUT --------- */
 .about-section {
@@ -596,48 +518,6 @@ nav {
     line-height: 1.7;
 }
 
-/* ---------- RESPONSIVE DESIGN ----------- */
-@media (max-width: 1024px) {
-    .about-section {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
-        padding-top: 3rem;
-    }
-
-    .about-slider {
-        flex-wrap: wrap; /*Pictures jumps down a row if they cant fit */
-        justify-content: center;
-    }
-
-    .about-card {
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@media (max-width: 600px) {
-    .about-header {
-        font-size: 2.2rem;
-    }
-
-    .about-card {
-        width: 150px;
-        height: 150px;
-        border-width: 6px; /*thin out the border */
-    }
-
-    .text-container {
-        padding: 1.5rem;
-        gap: 1.5rem;
-    }
-
-    .about-text h2 {
-        font-size: 1.8rem;
-    }
-}
-
-
 /* ------------- RESUME PAGE ------------ */
 .resume-section {
     padding: 4rem 5%;
@@ -707,7 +587,7 @@ nav {
     letter-spacing: 1px;
 }
 
-/* ------- EDUCATION SECTION -------- */
+/* -------------- EDUCATION SECTION -------- */
 .education-section {
     padding: 2rem 5% 5rem;
     max-width: 1400px;
@@ -761,20 +641,102 @@ nav {
     font-size: 1rem;
 }
 
-/* -------- RESPONSIVE DESIGN ------------ */
-@media (max-width: 1024px) {
+
+/* -------RESPONSIVE DESIGN ------  */
+@media (max-width: 1024px){
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .logo-card {
+        width: 180px;
+        height: 180px;
+    }
+
+    .logo-card img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+
+    .about-slider {
+        flex-wrap: wrap; /*Pictures jumps down a row if they cant fit */
+        justify-content: center;
+    }
+
+    .about-card {
+        width: 180px;
+        height: 180px;
+    }
+
     .resume-header {
         grid-template-columns: 1fr;
         justify-items: center;
     }
 
     .resume-photo {
-        max-width: 400px;
+        order: -1; /* Moves the image above the text on smaller screens */
     }
 }
 
-@media (max-width: 768px) {
-    .resume-header h2, .resume-education h2 {
+@media (max-width: 768px){
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo-card {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .logo-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-slider {
+        flex-wrap: wrap;
+    }
+
+    .school-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .hack-grid,
+    .school-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-header h2, 
+    .resume-education h2 {
         font-size: 2rem;
         text-align: left;
     }
@@ -782,6 +744,41 @@ nav {
     .resume-experience, .education-card {
         padding: 1.5rem;
     }
+}
+
+@media (max-width: 600px) {
+    .about-header {
+        font-size: 2.2rem;
+    }
+
+    .about-card {
+        width: 150px;
+        height: 150px;
+        border-width: 6px; /*thin out the border */
+    }
+
+    .text-container {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px){
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .modal-content{
+    margin: 3rem auto;
+  }
 }
 
 /* ---- EASTER EGG ----- */
