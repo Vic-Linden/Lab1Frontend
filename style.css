@@ -783,3 +783,10 @@ nav {
         padding: 1.5rem;
     }
 }
+
+/* ---- EASTER EGG ----- */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
