@@ -653,3 +653,56 @@ nav {
     letter-spacing: 1px;
 }
 
+/* ------- EDUCATION SECTION -------- */
+.education-section {
+    padding: 2rem 5% 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.resume-education {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.education-card {
+    background: rgba(51, 51, 51, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #f4f4f4;
+    border-left: 4px solid #ffd700;
+}
+
+.resume-education h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: "Georgia", serif;
+    margin-bottom: 2rem;
+}
+
+.education-card h3 {
+    font-size: 1.2rem;
+    font-family: "Georgia", serif;
+    color: #ffd700;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.09rem;
+}
+
+.education-card h4 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.status {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.education-card p {
+    line-height: 1.7;
+    opacity: 0.9;
+    font-size: 1rem;
+}
