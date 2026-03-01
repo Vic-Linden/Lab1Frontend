@@ -161,7 +161,8 @@ nav {
     align-items: flex-start;
 }
 
-.learning-card, .school-text {
+.learning-card, 
+.school-text {
     background: #595959;
     padding: 1.5rem;
     border-radius: 12px;
@@ -169,21 +170,26 @@ nav {
     line-height: 1.6;
 }
 
-.learning-card h2 {
+.learning-card h2,
+.school-text h2 {
     font-size: 2.2rem;
-    color: #1a2639;
+    color: #ffd700;
     font-weight: 400;
     font-family: "Georgia", serif;
     margin-bottom: 5px;
 }
 
-.learning-card p {
-    font-size: 1rem;
+.learning-card p,
+.school-text p {
+    color: #f4f4f4;
+    font-size: 1.1rem;
     opacity: 0.8;
     margin-bottom: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .learning-card p.years {
+    color: #f4f4f4;
     font-weight: bold;
     opacity: 0.6;
     margin-bottom: 15px;
@@ -225,18 +231,6 @@ nav {
     box-shadow: 0 15px 4px rgba(0,0,0,0.2);
     line-height: 1.6;
 } 
-
-.school-text h2 {
-    margin-bottom: 5px;
-    color: #1a2639;
-    font-family: "Georgia", serif;
-}
-
-.school-text p {
-    font-size: 1rem;
-    opacity: 0.8;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /* FOOTER SECTION  */
 .main-footer {
